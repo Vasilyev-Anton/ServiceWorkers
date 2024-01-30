@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     const response = await fetch('/api/news');
     const movieData = await response.json();
 
+
+    
     // Пройдемся по массиву movieData и обновим HTML
     movieData.forEach((movie) => {
       const moviePoster = document.createElement('img');
